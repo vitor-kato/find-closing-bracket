@@ -35,7 +35,7 @@ cp backend/.env.example backend/find_closing_bracket/.env
 Fire it up
 
 ```sh
-./build-dev
+./build-dev.sh
 ```
 
 When docker finishes building the images, head to your browser and enter the address
