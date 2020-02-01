@@ -5,12 +5,12 @@ verify_ssl = true
 
 [dev-packages]
 rope = "*"
-black = "*"
 
 [packages]
 django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
+django-environ = "*"
 
 [requires]
 python_version = "3.6"
