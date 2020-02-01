@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  backend:
+    # use root so django can create/read from sqlite db
+    # use only in dev
+    user: root
+    volumes:
+      - ./backend:/app
+    environment:
+      - DEBUG=True
+      - CORS_ORIGIN_WHITELIST=http://0.0.0.0:8081
+
+  frontend:
+    build:
+      target: develop-stage
+    volumes:
+      - ./frontend:/app
+    command: /bin/sh -c "yarn --pure-lockfile && yarn start"
+    ports:
+      - 8081:3000

@@ -1,0 +1,13 @@
+version: "3.7"
+# TODO: EXPAND THIS
+services:
+  backend:
+    environment:
+      - DEBUG=False
+      - CORS_ORIGIN_WHITELIST=http://0.0.0.0:8080
+
+  frontend:
+    build:
+      target: "production-stage"
+    ports:
+      - 8080:80
