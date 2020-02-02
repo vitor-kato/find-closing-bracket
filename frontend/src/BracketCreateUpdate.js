@@ -81,8 +81,12 @@ class BracketCreateUpdate extends Component {
                         Enter an expression with brackets and a index to find out where is the matching closing bracket
                     </h2>
                     <br />
-                    <Form.Group controlId="formPostBracket">
+                    <Form.Group controlId="formPostString">
+                        <Form.Label>Expression With Brackets</Form.Label>
                         <Form.Control size="lg" ref='string' placeholder="E.g. [ABC[23]][89]" />
+                    </Form.Group>
+                    <Form.Group controlId="formPostIndex">
+                        <Form.Label>Open Bracket Index</Form.Label>
                         <Form.Control type="number" size="lg" ref='index' placeholder="E.g. 0" />
                     </Form.Group>
                     <Button variant="primary" type="submit">
