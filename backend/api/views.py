@@ -42,8 +42,8 @@ def find_closing_bracket_list(request):
                 "data": serializer.data,
                 "count": paginator.count,
                 "numpages": paginator.num_pages,
-                "nextlink": "/api/bracket/?page=" + str(next_page),
-                "prevlink": "/api/bracket/?page=" + str(previous_page),
+                "nextlink": "/api/v1/bracket/?page=" + str(next_page),
+                "prevlink": "/api/v1/bracket/?page=" + str(previous_page),
             }
         )
 
