@@ -46,6 +46,14 @@ http://0.0.0.0:8081/
 
 Then enter an string with some brackets like `[ABC[23]][89]`, and the index of the bracket that you want to find the matching closing bracket.
 
+### Testing
+
+There is a convenience script to run the tests
+
+```sh
+./tests.sh
+```
+
 ## Roadmap
 
 - Migrate from sqlite
