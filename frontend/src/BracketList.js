@@ -91,6 +91,7 @@ class bracketList extends Component {
                     onClick={this.nextPage}
                     variant="primary"
                     type="submit"
+                    disabled={this.state.pages > 1 ? false : true}
                 >
                     Next page
                 </Button>

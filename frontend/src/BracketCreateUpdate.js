@@ -28,9 +28,11 @@ class BracketCreateUpdate extends Component {
                 "index": parseInt(this.refs.index.value),
             }
         ).then((result) => {
+            console.log(result);
             this.props.history.push('/bracket')
             alert("FindBracket created!");
-        }).catch(() => {
+        }).catch((error) => {
+            console.log(error.response);
             alert('There was an error! Please re-check your URL.');
         });
     }
